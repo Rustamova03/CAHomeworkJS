@@ -1,0 +1,90 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none!important;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+header{
+    background-color: rgb(228, 222, 216);
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    gap: 100px;
+}
+.left img{
+    width: 20%;
+}
+.right{
+    display: flex;
+    align-items: center;
+    text-align: center;
+  
+    gap: 30px;
+}
+nav ul{
+    display: flex;
+    gap: 15px;
+    margin: 0;
+}
+nav ul li a{
+  color: black;
+  font-size: 1.2rem;
+}
+.corouselsite{
+    display: flex;
+   align-items: center;
+   gap: 15px;
+}
+.corouselsite h1{
+ font-family: 'Times New Roman', Times, serif;
+ font-size: 3.5rem; 
+ font-weight: bold;
+}
+.corouselsite p{
+font-style: italic;
+font-size: 1.2rem;
+}
+.corouselsite button{
+padding: 10px 50px;
+border: 3px solid red;
+}
+.corouselsite button:hover{
+background-color: red;
+color: white;
+transition: all 600ms;
+}
+
+#banner{
+    background-image: url(./image/background9.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner{
+    background-color: rgba(242,242,242,0.6);
+    padding: 100px 0;
+}
+.cards{
+    display: flex;
+    gap: 20px;
+}
+.card{
+    padding: 50px 20px;
+    text-align: center;
+    gap: 10px;
+    background-color: rgb(231, 231, 231);
+    border: none;
+}
+.card i{
+   font-size:3.5rem;
+   color: red;
+}
