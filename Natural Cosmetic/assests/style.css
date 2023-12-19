@@ -88,3 +88,38 @@ transition: all 600ms;
    font-size:3.5rem;
    color: red;
 }
+ .accordiondiv{
+    display: flex;
+    gap: 200px;
+    align-items: center;
+} 
+
+.accordionleft{
+    width: 50%;
+}
+.accordionleft h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3rem;
+}
+.accordionleft p{
+font-style: italic;
+    font-size: 1.5rem;
+}
+.image img{
+    width: 100%;
+}
+.cosmetic{
+    padding: 200px 0;
+    background-color: rgb(230, 230, 243);
+    text-align: center;
+    align-items: center;
+}
+.cosmetic h1{
+  font-size: 4rem;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.cosmetic a{
+  font-size: 1.5rem;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  color: black;
+}
