@@ -4,9 +4,10 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none !important;
+  font-family: "Times New Roman", Times, serif;
 }
 .container {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 header {
@@ -14,7 +15,7 @@ header {
   position: absolute;
   z-index: 1;
   width: 100%;
-  /* top: 0; */
+  top: 0; 
 }
 .header {
   display: flex;
@@ -72,16 +73,18 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 100px 0;
 }
 .floristcontent {
   width: 40%;
 }
 .floristcontent h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   color: rgb(21, 90, 21);
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 .floristcontent p {
+  font-size: 1.5rem;
   color: rgb(62, 126, 62);
   font-family: Georgia, "Times New Roman", Times, serif;
 }
@@ -96,6 +99,7 @@ header {
 .slideimg {
   display: flex;
   justify-content: space-around;
+  gap: 20px;
 }
 .slideimg img {
   width: 100%;
@@ -103,6 +107,7 @@ header {
 }
 #bouquet {
   margin: 150px 0;
+  padding: 50px 0;
   background-image: url(../image/background2.jpg);
 }
 .bouquet {
@@ -110,43 +115,314 @@ header {
 }
 .bouquetcontent {
   text-align: center;
+  color: #1b745e;
+}
+.bouquetcontent p{
+  font-size: 1.4rem;
+}
+.bouquetcontent h1{
+  font-size: 3.5rem;
 }
 .card {
-  width: 30%;
+  width: 35%;
+  color: #1b745e;
 }
 .card img {
-  height: 300px;
+  height: 400px;
+
 }
-.card h4{
-  padding: 50px 30px;
+.card h3 {
+  padding: 60px 30px;
 }
-.carousel-inner{
-    margin-top: 50px;
+.carousel-inner {
+  margin-top: 50px;
 }
-.mission{
-    display: flex;
-    justify-content: space-between;
+.mission {
+  display: flex;
+  justify-content: space-between;
+}
+.missioncontent {
+  width: 50%;
+  padding: 100px;
+  background: #1b745e;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+  justify-content: center;
+}
+.missioncontent h1{
+  font-size:3rem;
+}
+.missioncontent p{
+  font-size: 1.4rem;
+}
+.missioncontent button {
+  padding: 10px 30px;
+  color: #1b745e;
+  border: none;
+}
+.missionimg {
+  width: 50%;
+}
+.missionimg img {
+  width: 100%;
+}
+.postulant {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+.postulantdiv {
+  text-align: center;
+  padding: 100px 0;
+  color: #1b745e;
+}
+.postulantdiv i {
+  font-size: 2rem;
+}
+.portfolioimage {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.portfoliocard {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-style: italic;
+  color: #1b745e;
+  background-color: #95cfc1;
+}
+.portfoliotext {
+  text-align: center;
+  color: #1b745e;
+  font-style: italic;
+}
+.portfoliotext p {
+  font-size: 1.5rem;
+}
+.portfoliotext h1 {
+  font-size: 4rem;
+}
+
+.portfoliocard i {
+  font-size: 2.5rem;
+}
+.portfoliocard p {
+  font-size: 1.4rem;
+}
+.portfoliocard button {
+  padding: 10px 20px;
+  color: #1b745e;
+  border: none;
+  font-size: 1.3rem;
+}
+
+.portfoliocard img {
+  width: 100%;
+}
+
+.eventspricingcards {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.eventspricingcontent{
+  text-align: center;
+  color: #1b745e;
+  font-style: italic;
+}
+.eventspricingcontent p{
+  font-size: 1.4rem;
+}
+.eventspricingcontent h1{
+  font-size: 3.5rem;
+}
+.eventscard {
+  width: 50%;
+  text-align: center;
+  background-color: rgb(252, 244, 234);
+  padding:100px 50px;
+  border: 1px solid #1b745e;
+  color: #1b745e;
+
+}
+.eventscard span {
+ font-size: 2.5rem;
+}
+.eventscard p {
+ font-size: 1.5rem;
+}
+.eventscard button {
+ padding: 15px 50px;
+ color: #1b745e;
+ background-color: #d3ede7;
+ border: none;
+ font-size: 1.3rem;
+}
+
+#team{
+  padding: 50px 0;
+  background-color: azure;
+}
+.team {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding-top: 50px;
+}
+.teamcontent{
+  text-align: center;
+  color: #1b745e;
+  font-style: italic;
+}
+.teamcontent p{
+font-size: 1.5rem;
+}
+.teamcontent h1{
+font-size: 3.5rem;
+}
+.teamdiv {
+  text-align: center;
+  background-color: bisque;
+  width: 100%;
   
 }
-.missioncontent{
-    width: 50%;
-    padding: 100px;
-    background: #1b745e;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items:self-start;
-    justify-content: center;
-    
+
+.teamdivimg img {
+  width: 100%;
+  
 }
-.missioncontent button{
- padding:10px 30px;
- color: #1b745e;
- border: none;
+.teamdivtext {
+  padding: 40px 0;
 }
-.missionimg{
-    width: 50%;
+.flora {
+  display: flex;
+ align-items: center; 
+  justify-content: space-between;
+  gap: 100px;
+  color: #1b745e;
+  padding: 200px 0;
 }
-.missionimg img{
-    width: 100%;
+
+.floraleft h1 {
+  font-size: 3.5rem;
+}
+.floraright p {
+  font-size: 1.3rem;
+}
+
+#clients {
+  background-color: #e0ecdc;
+  padding: 100px 0;
+}
+.clients h1 {
+  font-size: 3.5rem;
+  text-align: center;
+  color: #1b745e;
+}
+.clientsimg {
+  padding-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  row-gap: 30px;
+}
+.clientsimg img {
+  width: 15%;
+}
+
+#find {
+  padding-top: 150px;
+}
+.find {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 100px;
+}
+.findtext {
+  text-align: center;
+  font-style: italic;
+  color: #1b745e;
+}
+.findtext p {
+  font-size: 1.4rem;
+}
+.findtext h1 {
+  font-size: 3rem;
+}
+
+.find div {
+  font-size: 1.5rem;
+  color: #1b745e;
+  display: flex;
+  flex-direction: column;
+}
+.find div a {
+  color: #1b745e;
+}
+.findcard {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  gap: 30px;
+  background-color: antiquewhite;
+}
+.findcard h1 {
+  text-align: center;
+}
+#subscribe {
+  padding: 150px 0;
+}
+.subscribe {
+  text-align: center;
+  color: #1b745e;
+}
+.subscribe i {
+  font-size: 4rem;
+}
+.subscribe h1 {
+  font-size: 4rem;
+}
+.subscribe p {
+  font-size: 1.5rem;
+}
+.subscribe input {
+  padding: 10px 90px;
+}
+.subscribe button {
+  padding: 10px 40px;
+}
+footer {
+  padding: 150px 0;
+  background-color: #e0ecdc;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+.footerright {
+  display: flex;
+  gap: 50px;
+}
+.footerright div {
+  display: flex;
+  flex-direction: column;
+}
+.footerright div {
+  color: #1b745e;
+}
+.footerright div a {
+  color: #1b745e;
+  font-size: 1.2rem;
+}
+.footerleft input {
+  padding: 10px 90px;
+}
+.footerleft button {
+  padding: 10px 40px;
 }
