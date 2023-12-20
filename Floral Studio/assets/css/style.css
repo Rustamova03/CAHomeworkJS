@@ -181,6 +181,10 @@ header {
 .postulantdiv i {
   font-size: 2rem;
 }
+#portfolio{
+  background-image: url(../image/background1-1-1085x595.jpg);
+  padding: 100px 0;
+}
 .portfolioimage {
   display: flex;
   flex-wrap: wrap;
