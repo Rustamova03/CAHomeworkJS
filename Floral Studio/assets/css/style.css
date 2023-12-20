@@ -170,12 +170,12 @@ header {
 }
 .postulant {
   display: flex;
-  justify-content: space-around;
-  gap: 20px;
+  justify-content: space-around; 
+ gap: 20px;
 }
 .postulantdiv {
   text-align: center;
-  padding: 100px 0;
+  padding-top: 50px ;
   color: #1b745e;
 }
 .postulantdiv i {
@@ -224,6 +224,29 @@ header {
 
 .portfoliocard img {
   width: 100%;
+}
+.pricing{
+  padding: 100px 0;
+}
+.pricingtext{
+  color: #1b745e;
+  text-align: center;
+  font-style: italic;
+}
+.pricingtext h1{
+ font-size: 3.5rem ;
+}
+.pricingtext p{
+ font-size: 1.5rem ;
+}
+.pricingcards{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  gap: 35px;
+}
+.card{
+  width: 30%;
 }
 
 .eventspricingcards {
@@ -425,4 +448,93 @@ footer {
 }
 .footerleft button {
   padding: 10px 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .carousel{
+    display: none;
+  }
+  .florist{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .floristimg1{
+    display: none;
+  }
+  .bouquet{
+    display: none;
+  }
+  .mission{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .missioncontent{
+    width: 100%;
+  }
+  .missionimg{
+    width: 100%;
+  }
+  .postulant{
+    display: flex;
+    flex-direction: column;
+  }
+  .portfolioimage{
+    display: flex;
+    flex-direction: column;
+  }
+  .portfoliocard{
+    width: 100%;
+  }
+  .cardss{
+    padding: 100px ;
+  }
+  .pricingcards{
+
+    display: flex;
+    flex-direction: column;
+  }
+ .card{
+  width: 100%;
+ }
+ .eventspricingcards{
+  display: flex;
+  flex-direction: column;
+ }
+ .eventscard{
+  width: 100%;
+ }
+ .team{
+  display: flex;
+  flex-direction: column;
+ }
+ .teamdiv{
+  width: 100%;
+ }
+ .flora{
+  display: flex;
+  flex-direction: column;
+ }
+ .clientsimg{
+  display: flex;
+  flex-direction: column;
+ }
+ .find{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+ }
+ .findcard{
+  width: 100%;
+ }
+.footer{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+}
+.footerright{
+  display: flex;
+  flex-direction: column;
+}
 }
