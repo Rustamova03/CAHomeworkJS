@@ -1,0 +1,25 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "The Upper Eye",
+      "image": "./image/p1.png.webp"
+    },
+
+    {
+      "id": 2,
+      "title": "The Crab Wheel",
+      "image": "./image/p2.png.webp"
+    },
+    {
+      "id": 3,
+      "title": "The Plug Ninja",
+      "image": "./image/p3.png.webp"
+    },
+    {
+      "id": 4,
+      "title": "The Controller",
+      "image": "./image/p4.png.webp"
+    }
+  ]
+}

@@ -1,0 +1,614 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
+  padding: 30px 0;
+  background-color: rgba(138, 144, 255, 0.9);
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  position: fixed;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headerleft {
+  display: flex;
+}
+.navbar {
+  overflow: hidden;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  padding: 14px 16px;
+  background-color: inherit;
+  color: white;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+#robotics {
+  background-image: url(./image/banner-bg.jpg.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.robotics {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  color: white;
+}
+.roboticsleft {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.roboticsleft h1 {
+  font-size: 4.5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 100;
+}
+.roboticsleft button {
+  padding: 15px;
+  width: 35%;
+  font-weight: 300;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.1rem;
+  border: 2px solid transparent;
+}
+.roboticsleft button:hover {
+  transition: 0.7s;
+  background-color: rgba(138, 144, 255, 0.9);
+  color: white;
+  border: 2px solid white;
+}
+#show {
+  padding: 100px 0;
+}
+.show {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+.show p {
+  color: #777777;
+  font-size: 1.2rem;
+}
+.showtop {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+.showtop h1 {
+  font-size: 3rem;
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 20%;
+}
+.cardtop {
+  background-color: #f7f7f7;
+  padding: 30px 80px;
+  border-bottom: 2px solid #a8a6a6;
+}
+.cardbottom {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: center;
+  background-color: #f9f9ff;
+  padding: 30px;
+}
+.cardbottom.btn {
+  text-align: center;
+}
+.cardbottom button {
+  width: 60%;
+  padding: 14px 0;
+  font-weight: bold;
+  border: 1px solid transparent;
+
+  transition: all 0.3s;
+}
+.cardbottom button:hover {
+  background-image: -webkit-linear-gradient(0deg, #828fff 0%, #d496ff 100%);
+  color: white;
+  border: 1px solid #828fff;
+}
+
+.network {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  padding: 50px 0;
+}
+.networkleft {
+  width: 50%;
+}
+.networkleft img {
+  width: 100%;
+}
+.networkright {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.networkright h1 {
+  font-size: 3rem;
+}
+.networkright span {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.networkright p {
+  color: #777777;
+  font-size: 1.2rem;
+}
+.networkright button {
+  width: 30%;
+  padding: 15px 0;
+  background-color: #828fff;
+  color: white;
+  border: 1px solid #828fff;
+}
+.networkright button:hover {
+  color: #828fff;
+  background-color: transparent;
+}
+.change-you {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 0;
+}
+.change-you-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.change-you-left span {
+  color: blue;
+}
+.change-you-left h1 {
+  font-size: 3rem;
+}
+.change-you-left p {
+  color: #777777;
+  font-size: 1.2rem;
+}
+.change-you-left button {
+  width: 30%;
+  padding: 15px 0;
+  background-color: #828fff;
+  color: white;
+  border: 1px solid transparent;
+  font-size: 1.1rem;
+}
+.change-you-left button:hover {
+  background-color: transparent;
+  border: 1px solid #828fff;
+  color: #828fff;
+}
+#unique {
+  background-image: url(./image/feature-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 150px 0;
+}
+.unique {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.uniquetop {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  color: white;
+}
+.uniquetop h1 {
+  font-size: 3rem;
+}
+.uniquetop p {
+  font-size: 1.3rem;
+}
+.uniquecards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+.uniquecard {
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 20px;
+}
+.uniquecard p {
+  color: #777777;
+  font-size: 1.2rem;
+}
+.cardcontent {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.cardcontent a i {
+  color: black;
+  font-size: 2rem;
+}
+.uniquecard:hover {
+  color: blue;
+}
+#premium {
+  padding: 150px 0;
+}
+.premium {
+  display: flex;
+  justify-content: space-between;
+}
+.blog {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding-bottom:100px;
+}
+.blogtop {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+.blogtop h1 {
+  font-size: 3rem;
+}
+.blogtop p {
+  color: #777777;
+  font-size: 1.2rem;
+}
+.blogcards {
+  display: flex;
+  justify-content: space-between;
+}
+.blogcard {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.blogcard p {
+  color: #777777;
+  font-size: 1.2rem;
+}
+.blogcard span {
+  font-size: 1.2rem;
+}
+.blogcardbtn button {
+  padding: 8px 15px;
+  background-color: #828fff;
+  color: white;
+  border: 1px solid transparent;
+  font-size: 1.2rem;
+}
+.blogcardbtn button:hover {
+  background-color: transparent;
+  color: #828fff;
+  border: 1px solid #828fff;
+  cursor: pointer;
+}
+footer{
+  background-image: url(./image/footer-bg.jpg.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.footertop {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  padding-top: 150px ;
+}
+.products {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.products nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.products nav ul li a{
+  color: white;
+  font-size: 1.2rem;
+}
+.products nav ul li a:hover{
+  color: blue;
+  
+}
+
+.instagram-feed {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.instagram-feed-image {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.newsletter input {
+  padding: 10px 40px;
+  border-radius: 20px;
+}
+.newsletter button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-image: -webkit-linear-gradient(0deg, #828fff 0%, #d496ff 100%);
+  border: 1px solid transparent;
+}
+.footerbottom{
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 0;
+}
+.footerbottomright{
+  display: flex;
+  gap: 20px;
+}
+.footerbottomright i{
+  background-color: black;
+  padding: 15px;
+}
+.footerbottomright i:hover{
+background-color: #828fff;
+}
+#about-us{
+  background-image: url(./image/banner-bg.jpg.webp);
+  height: 70vh;
+}
+.about-us{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+.about-us h1{
+  color: white;
+  font-size: 3.5rem;
+}
+#services{
+  background-image: url(./image/banner-bg.jpg.webp);
+  height: 70vh;
+}
+.services{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+.services h1{
+  color: white;
+  font-size: 3.5rem;
+}
+
+.services-to-you{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 100px 0;
+}
+
+.services-to-you-top{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.services-to-you-top h1{
+font-size: 3rem;
+}
+.services-to-you-top p{
+  color: #777777;
+  font-size: 1.2rem;
+}
+
+.services-bottom-cards{
+  display: flex;
+  justify-content: space-between;
+}
+.services-bottom-card{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 32%;
+}
+.services-bottom-card:hover{
+  color: #828fff;
+}
+.services-bottom-card p{
+  color: #777777;
+  font-size: 1.2rem;
+}
+#product{
+  background-image: url(./image/banner-bg.jpg.webp);
+  height: 70vh;
+}
+.product{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+.product h1{
+  color: white;
+  font-size: 3.5rem;
+}
+#contact{
+  background-image: url(./image/banner-bg.jpg.webp);
+  height: 70vh;
+}
+.contact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+.contact h1{
+  color: white;
+  font-size: 3.5rem;
+}
+#error{
+  padding: 100px 0;
+}
+.error{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #d8d8d8;
+  padding: 200px 0;
+  color: #3d3c3c;
+}
+.error i{
+  font-size: 3rem;
+}
+
+.error h1{
+  font-size: 2rem;
+}
+.error p{
+  font-size: 1.2rem;
+}
+#contact-page{
+  padding: 100px 0;
+}
+.contact-page{
+  display: flex;
+  justify-content: space-between;
+}
+.contact-content{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contact-page-content{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.contact-page-content i{
+font-size: 1.5rem;
+}
+.contact-input{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact-input input{
+  padding: 10px 35px;
+}
+.sendmessage{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.sendmessage button{
+  width: 40%;
+  padding: 10px 15px;
+  background-color: #828fff;
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 20px;
+}
+.sendmessage button:hover{
+ 
+  background-color: transparent;
+  color: #828fff;
+  border: 1px solid #828fff;
+}
+
